@@ -1,4 +1,3 @@
-import 'package:bottom_bar/bottom_bar.dart';
 import 'package:citcom_ui/common/color.dart';
 import 'package:citcom_ui/common/images.dart';
 import 'package:citcom_ui/common/widget/CustomTextfeild.dart';
@@ -14,8 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentPage = 0;
-  final _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -827,35 +824,6 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: BottomBar(
-        selectedIndex: _currentPage,
-        onTap: (int index) {
-          _pageController.jumpToPage(index);
-          setState(() => _currentPage = index);
-        },
-        items: <BottomBarItem>[
-          const BottomBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-            activeColor: Colors.blue,
-          ),
-          const BottomBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
-            title: Text('Favorites'),
-            activeColor: Colors.red,
-          ),
-          BottomBarItem(
-            icon: const Icon(Icons.delivery_dining),
-            title: const Text('Account'),
-            activeColor: Colors.greenAccent.shade700,
-          ),
-          const BottomBarItem(
-            icon: Icon(Icons.person_pin),
-            title: Text('Settings'),
-            activeColor: Colors.orange,
-          ),
-        ],
       ),
     );
   }

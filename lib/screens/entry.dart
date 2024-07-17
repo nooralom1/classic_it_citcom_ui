@@ -33,7 +33,7 @@ class _EntryState extends State<Entry> {
                     buttonName: "Already a Customer? Sign in",
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SignIn()));
+                          MaterialPageRoute(builder: (context) => const SignIn()));
                     },
                     bgColor: NColor.red, buttonNameColor: NColor.white, buttonNameSize: 16,),
               ),
@@ -52,7 +52,7 @@ class _EntryState extends State<Entry> {
               InkWell(
                onTap: () {
                  Navigator.push(context,
-                     MaterialPageRoute(builder: (context) => SignIn()));
+                     MaterialPageRoute(builder: (context) => const SignIn()));
                },
                   child: const Text("Skip sign in",style: TextStyle(fontSize: 16,color: Color(0xff121212) ),))
             ],
