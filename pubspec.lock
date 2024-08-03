@@ -156,10 +156,10 @@ packages:
     dependency: "direct main"
     description:
       name: otp_pin_field
-      sha256: a9dca37f66934719de6bae7cf873c17444b4faffd5880d4ccc5f7d529230f8c8
+      sha256: f8bf93ce90a01e123d90372ff96f342533a3c8a26c7f22fda054901fe7f3342a
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.9"
+    version: "1.2.9+1"
   path:
     dependency: transitive
     description:

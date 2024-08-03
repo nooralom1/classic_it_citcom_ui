@@ -1,10 +1,9 @@
 import 'package:citcom_ui/common/images.dart';
 import 'package:citcom_ui/common/color.dart';
+import 'package:citcom_ui/common/widget/CustomTextfeild.dart';
 import 'package:citcom_ui/common/widget/custmelevatedbutton.dart';
 import 'package:citcom_ui/screens/authentication/signin.dart';
 import 'package:flutter/material.dart';
-
-import '../../common/widget/CustomTextfeild.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
