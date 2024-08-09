@@ -1,6 +1,5 @@
 import 'package:citcom_ui/screens/authentication/signin.dart';
 import 'package:flutter/material.dart';
-
 import '../../common/color.dart';
 import '../../common/images.dart';
 import '../../common/widget/CustomTextfeild.dart';
@@ -99,7 +98,7 @@ class _NewPasswordState extends State<NewPassword> {
                     buttonName: "Continue",
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SignIn()));
+                          MaterialPageRoute(builder: (context) => const SignIn()));
                     },
                     bgColor: NColor.red,
                     buttonNameColor: NColor.white,

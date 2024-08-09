@@ -9,4 +9,5 @@ static const String textA5 = "Tripcomp 3 Piece Luggage Sets, Hardside Carry...";
 static const String textA6 = "Brand: Travelhouse";
 static const String textA7 = "৳ ";
 static const String textA8 = "10692";
+
 }

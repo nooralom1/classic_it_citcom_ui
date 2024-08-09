@@ -1,4 +1,4 @@
-import 'package:citcom_ui/screens/authentication/signup.dart';
+
 import 'package:citcom_ui/screens/authentication/verification.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +38,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -51,24 +51,24 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "Forget Password?",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
-                Text(
+                const Text(
                   "Don’t worry we will sand an OTP to your",
                 ),
-                Text(
+                const Text(
                   " registered mobile number",
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 const Text(
                   "Enter Mobile Number",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 const CustomTextField(
@@ -85,8 +85,10 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   child: CustomElvtdButn(
                     buttonName: "Continue",
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Verification()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Verification()));
                     },
                     bgColor: NColor.red,
                     buttonNameColor: NColor.white,

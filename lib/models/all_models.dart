@@ -2,6 +2,7 @@ import 'package:citcom_ui/common/images.dart';
 import 'package:citcom_ui/common/text.dart';
 
 class TwoProducts {
+
   final String imagePath;
   final String imageName;
   final String brandName;
