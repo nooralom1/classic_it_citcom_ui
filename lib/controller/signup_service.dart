@@ -1,4 +1,1 @@
-class SignupService{
-
-
-}
+class SignupService {}

@@ -13,9 +13,10 @@ class _Opps404State extends State<Opps404> {
     return Scaffold(
       body: Center(
         child: SizedBox(
-          height: 350,
+            height: 350,
             width: 350,
-            child: Image.asset("assets/images/Oops! 404 Error with a broken robot-cuate (1) 1@2x.png")),
+            child: Image.asset(
+                "assets/images/Oops! 404 Error with a broken robot-cuate (1) 1@2x.png")),
       ),
     );
   }

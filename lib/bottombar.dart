@@ -13,7 +13,7 @@ class BottomNavigation extends StatefulWidget {
 
 class _BottomNavigationState extends State<BottomNavigation> {
   int currentIndex = 0;
-  List<Widget> bottomBar =[
+  List<Widget> bottomBar = [
     const HomePage(),
     const Category(),
     const Cart(),
@@ -26,12 +26,12 @@ class _BottomNavigationState extends State<BottomNavigation> {
         type: BottomNavigationBarType.fixed,
         fixedColor: Colors.red,
         currentIndex: currentIndex,
-        onTap: (index){
+        onTap: (index) {
           setState(() {
-            currentIndex=index;
+            currentIndex = index;
           });
         },
-        items:  const [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined), label: 'Home'),
           BottomNavigationBarItem(

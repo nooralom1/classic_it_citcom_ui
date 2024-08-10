@@ -15,7 +15,8 @@ class _Page404State extends State<Page404> {
         child: SizedBox(
             height: 350,
             width: 350,
-            child: Image.asset("assets/images/504 Error Gateway Timeout-rafiki 1.png")),
+            child: Image.asset(
+                "assets/images/504 Error Gateway Timeout-rafiki 1.png")),
       ),
     );
   }

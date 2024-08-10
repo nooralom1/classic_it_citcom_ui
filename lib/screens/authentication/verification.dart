@@ -1,10 +1,8 @@
 import 'package:citcom_ui/screens/authentication/newpassword.dart';
 import 'package:flutter/material.dart';
 import 'package:otp_pin_field/otp_pin_field.dart';
-
 import '../../common/color.dart';
 import '../../common/images.dart';
-import '../../common/widget/CustomTextfeild.dart';
 import '../../common/widget/custmelevatedbutton.dart';
 
 class Verification extends StatefulWidget {
@@ -39,7 +37,7 @@ class _VerificationState extends State<Verification> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -56,12 +54,12 @@ class _VerificationState extends State<Verification> {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "Verification Code",
                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 24),
                 ),
-                SizedBox(height: 30,),
-                Row(
+                const SizedBox(height: 30,),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
@@ -72,28 +70,25 @@ class _VerificationState extends State<Verification> {
                     ),
                   ],
                 ),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
         OtpPinField(
           key: _otpPinFieldController,
           autoFillEnable: false,
           textInputAction: TextInputAction.done,
           onSubmit: (text) {
-            print('Entered pin is $text');
           },
           onChange: (text) {
-            print('Enter on change pin is $text');
           },
           onCodeChanged: (code) {
-            print('onCodeChanged  is $code');
           },
-          otpPinFieldStyle: OtpPinFieldStyle(
+          otpPinFieldStyle: const OtpPinFieldStyle(
             activeFieldBorderGradient: LinearGradient(colors: [Colors.black, Colors.redAccent]),
             filledFieldBorderGradient: LinearGradient(colors: [Colors.green, Colors.tealAccent]),
             defaultFieldBorderGradient: LinearGradient(colors: [Colors.orange, Colors.brown]),
           )
         ),
-                SizedBox(height: 20,),
-                Text(
+                const SizedBox(height: 20,),
+                const Text(
                   "Verification Code has been sent",
                 ),
                 const SizedBox(
@@ -106,7 +101,7 @@ class _VerificationState extends State<Verification> {
                     buttonName: "Next",
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => NewPassword()));
+                          MaterialPageRoute(builder: (context) => const NewPassword()));
                     },
                     bgColor: NColor.red,
                     buttonNameColor: NColor.white,

@@ -85,9 +85,12 @@ class _SignInState extends State<SignIn> {
                                 builder: (context) => const ForgetPassword()));
                       },
                       child: InkWell(
-                        onTap: (){
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => ForgetPassword()));
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const ForgetPassword()));
                         },
                         child: const Text(
                           "Forget Password",
@@ -117,7 +120,10 @@ class _SignInState extends State<SignIn> {
                   child: CustomElvtdButn(
                     buttonName: " Sign In",
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomePage()));
                     },
                     bgColor: NColor.red,
                     buttonNameColor: NColor.white,
@@ -133,8 +139,10 @@ class _SignInState extends State<SignIn> {
                     const Text("Don't have an account? "),
                     InkWell(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => const Signup()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Signup()));
                       },
                       child: const Text(
                         "Sign Up",

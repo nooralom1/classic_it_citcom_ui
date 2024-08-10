@@ -17,9 +17,10 @@ class _SplashState extends State<Splash> {
     super.initState();
     Timer(
         const Duration(seconds: 3),
-            () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+        () => Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (BuildContext context) => const Entry())));
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

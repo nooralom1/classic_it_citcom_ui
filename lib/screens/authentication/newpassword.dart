@@ -43,9 +43,10 @@ class _NewPasswordState extends State<NewPassword> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      width: 300,
+                        width: 300,
                         height: 230,
-                        child: Image.asset("assets/images/New password Screen illustration@2x.png")),
+                        child: Image.asset(
+                            "assets/images/New password Screen illustration@2x.png")),
                   ],
                 ),
                 const SizedBox(
@@ -56,12 +57,15 @@ class _NewPasswordState extends State<NewPassword> {
                   children: [
                     Text(
                       "Create a new password",
-                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                     ),
                   ],
                 ),
-                const SizedBox(height: 20,),
-                 const Text(
+                const SizedBox(
+                  height: 20,
+                ),
+                const Text(
                   "Create a password",
                 ),
                 const SizedBox(
@@ -97,8 +101,10 @@ class _NewPasswordState extends State<NewPassword> {
                   child: CustomElvtdButn(
                     buttonName: "Continue",
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const SignIn()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignIn()));
                     },
                     bgColor: NColor.red,
                     buttonNameColor: NColor.white,

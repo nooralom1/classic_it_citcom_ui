@@ -11,8 +11,10 @@ class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Cart"),
-        centerTitle: true,),
+      appBar: AppBar(
+        title: const Text("Cart"),
+        centerTitle: true,
+      ),
     );
   }
 }
