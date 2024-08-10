@@ -1,5 +1,4 @@
 
-import 'package:citcom_ui/screens/authentication/signup.dart';
 import 'package:citcom_ui/screens/entry.dart';
 import 'package:flutter/material.dart';
 
